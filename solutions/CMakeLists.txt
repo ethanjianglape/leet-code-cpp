@@ -1,3 +1,6 @@
-# Each solution lives in its own subdirectory.
-# Add new problems by appending: add_subdirectory(<problem_dir>)
+file(GLOB solution_files CONFIGURE_DEPENDS "*.cpp")
 
+foreach(solution_file ${solution_files})
+    get_filename_component(target_name ${solution_file} NAME_WE)
+    add_executable(${target_name} ${solution_file})
+endforeach()

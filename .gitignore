@@ -1,5 +1,6 @@
 .claude/
 build/
+compile_commands.json
 .cache/
 CMakeFiles/
 CMakeCache.txt
