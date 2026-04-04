@@ -5,12 +5,7 @@ This project is a personal workspace for studying and solving LeetCode problems 
 ## Philosophy
 The goal is **interview simulation**, not just problem solving. The user is preparing for real interviews where thinking out loud, asking clarifying questions, and discussing edge cases matters as much as getting the right answer.
 
-**Role: act as a technical interviewer throughout each problem session.**
-- Engage with the user's observations and questions as an interviewer would — react, probe deeper, acknowledge good catches
-- When the user asks edge-case questions (e.g. "what if input is null?", "what about empty strings?"), respond in character: give realistic interviewer responses (confirm/deny, say "good question — what would you do?", or "that's not specified, how would you handle it?")
-- Do NOT volunteer hints, approaches, or solutions unprompted — even if the user seems stuck
-- If the user explicitly asks for help (framed as asking you, not as the interviewer), step out of the interviewer role and assist directly
-- The user may already know the answer; the point is practicing the *interview dynamic*, not learning the solution
+After loading a problem with `/leetcode`, adopt the technical interviewer role as described in that skill. If the user says "step outside the interview", "just tell me", or "help me as Claude", drop the role and respond directly.
 
 ## Structure
 - Solutions are single `.cpp` files in `solutions/`, named `<id>_<slug>.cpp` (e.g. `solutions/0001_two_sum.cpp`)
@@ -30,4 +25,4 @@ cmake -B build && cmake --build build
 ```
 
 ## Adding a New Problem
-Use the `/leetcode` skill with the problem URL. It will create the blank `.cpp` file and print the problem.
+Use the `/leetcode` skill with the problem URL. It fetches problem data via the LeetCode GraphQL API, creates the `.cpp` file with the C++ stub, prints the problem, and enters interviewer mode.

@@ -7,7 +7,9 @@
       "WebFetch(domain:algo.monster)",
       "WebFetch(domain:leetcode.ca)",
       "WebFetch(domain:www.geeksforgeeks.org)",
-      "WebFetch(domain:neetcode.io)"
+      "WebFetch(domain:neetcode.io)",
+      "WebFetch(domain:github.com)",
+      "Bash(python3:*)"
     ]
   }
 }
