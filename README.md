@@ -21,9 +21,10 @@ Use the `/leetcode` slash command with a LeetCode problem URL:
 ```
 
 This will:
-- Fetch the problem statement
-- Create a solution stub at `solutions/<id>_<slug>.cpp`
+- Fetch the problem statement and C++ stub via the LeetCode GraphQL API
+- Create a solution file at `solutions/<id>_<slug>.cpp`
 - Print the problem so you can start without opening a browser
+- Enter technical interviewer mode
 
 ### Work through the problem
 
@@ -48,3 +49,7 @@ solutions/
   CLAUDE.md               # interviewer behavior instructions
   commands/leetcode.md    # /leetcode slash command definition
 ```
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
