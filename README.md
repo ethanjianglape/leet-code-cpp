@@ -7,8 +7,6 @@ The goal is not memorization — it's **interview simulation**. Claude acts as a
 ## Requirements
 
 - [Claude Code](https://github.com/anthropics/claude-code)
-- CMake 3.25+
-- A C++23 compiler (clang or gcc)
 
 ## Usage
 
@@ -30,13 +28,15 @@ This will:
 
 Claude will respond as a technical interviewer. Ask clarifying questions, voice your observations, and think out loud — that's the point. If you get stuck and want a hint or explanation, just ask Claude directly (not as the interviewer).
 
-### Build
+### Review a previously solved problem
 
-```bash
-cmake -B build && cmake --build build
+Use the `/quiz` slash command to be quizzed on a random problem from your solutions folder:
+
+```
+/quiz
 ```
 
-Each solution is compiled as its own executable. Testing is done on LeetCode directly.
+Claude will present the problem as an interviewer would, then discuss your approach, complexity, and edge cases with you — without showing your previous solution.
 
 ## Structure
 
@@ -46,8 +46,9 @@ solutions/
   0023_merge_k_sorted_lists.cpp
   ...
 .claude/
-  CLAUDE.md               # interviewer behavior instructions
+  CLAUDE.md               # project and interviewer behavior instructions
   commands/leetcode.md    # /leetcode slash command definition
+  commands/quiz.md        # /quiz slash command definition
 ```
 
 ## License
