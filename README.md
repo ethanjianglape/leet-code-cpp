@@ -36,7 +36,7 @@ Use the `/quiz` slash command to be quizzed on a random problem from your soluti
 /quiz
 ```
 
-Claude will present the problem as an interviewer would, then discuss your approach, complexity, and edge cases with you — without showing your previous solution.
+Claude will present the problem as an interviewer would, then guide a discussion where you walk through the problem, your approach, the complexity, and any edge cases — all from memory. The goal is not to rewrite the solution, but to practice explaining it clearly, the way you'd need to in a real interview.
 
 ## Structure
 
