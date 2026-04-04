@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:leetcode.com)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(curl:*)",
+      "WebFetch(domain:algo.monster)",
+      "WebFetch(domain:leetcode.ca)",
+      "WebFetch(domain:www.geeksforgeeks.org)",
+      "WebFetch(domain:neetcode.io)"
     ]
   }
 }

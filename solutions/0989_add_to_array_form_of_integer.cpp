@@ -52,15 +52,13 @@ public:
             iter++;
         }
 
-        if (iter == num.rend()) {
-            while (k > 0) {
-                int carry = k / 10;
-                int digit = k % 10;
+        while (k > 0) {
+            int carry = k / 10;
+            int digit = k % 10;
 
-                num.insert(num.begin(), digit);
-            
-                k = carry;
-            }
+            num.insert(num.begin(), digit);
+        
+            k = carry;
         }
 
         return num;
