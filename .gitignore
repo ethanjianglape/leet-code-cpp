@@ -1,3 +1,7 @@
+# Editor temp files
+\#*#
+.#*
+
 build/
 compile_commands.json
 .cache/
