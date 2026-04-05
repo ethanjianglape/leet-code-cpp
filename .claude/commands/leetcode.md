@@ -41,6 +41,12 @@ The file contents must be exactly:
 //
 // <problem statement, converted from HTML to plain text — preserve examples and constraints, use readable formatting>
 
+#include <algorithm>
+#include <string>
+#include <vector>
+
+using namespace std;
+
 <C++ stub from codeSnippets, exactly as returned>
 
 int main() { return 0; }
