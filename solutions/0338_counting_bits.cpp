@@ -45,9 +45,9 @@ public:
         int p = 1;
 
         for (int i = 1; i <= n; i++) {
-            if (i == p * 2) {
+            if (i == p << 1) {
                 ans[i] = 1;
-                p = p * 2;
+                p <<= 1;
             } else {
                 ans[i] = 1 + ans[i - p];
             }
